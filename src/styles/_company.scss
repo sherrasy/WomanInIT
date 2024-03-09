@@ -1,0 +1,16 @@
+#h1 {
+    margin-top: 50vw;
+    color: aqua;
+}
+
+.main__section {
+    display: grid;
+    grid-template-columns: repeat(12, 20px);
+    grid-template-rows: repeat(12, 20px);
+}
+
+._section {
+    display: grid;
+    grid-template-columns: repeat(12, 20px);
+    grid-template-rows: repeat(12, 20px);
+}
