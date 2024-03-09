@@ -1,9 +1,6 @@
 @import './company';
-$dark-blue-color: #02315d;
-$-blue-color: #00457e;
-$light-blue-color: #5c8ebccd;
-$pink-color: #b9848c;
-$purple-color: #806492;
+@import './webinars';
+@import './vars';
 
 .container_questions_and_fears {
   // Стили для контейнера с вопросами и страхами
