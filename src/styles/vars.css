@@ -1,20 +1,22 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
-#h1 {
+.container_company #h1 {
   margin-top: 50vw;
   color: aqua;
 }
-
-.main__section {
-  display: grid;
-  grid-template-columns: repeat(12, 20px);
-  grid-template-rows: repeat(12, 20px);
+.container_company .company__section {
+  display: flex;
 }
-
-._section {
-  display: grid;
-  grid-template-columns: repeat(12, 20px);
-  grid-template-rows: repeat(12, 20px);
+.container_company .company__sectiona {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0);
+}
+.container_company .company__section .main__column {
+  display: flex;
+  gap: 10px;
+}
+.container_company .img_logo {
+  width: 100px;
 }
 
 /* Вопросы и страхи начало */
@@ -154,4 +156,96 @@ blockquote {
   box-shadow: -2px 0 0 #0000ff, -4px 0 0 #ccccff, -7px 0 0 #0000ff;
 }
 
-/* Вопросы и страхи конец *//*# sourceMappingURL=vars.css.map */
+/* Вопросы и страхи конец */
+.container_questions_and_fears h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.container_questions_and_fears .form-questions {
+  margin-top: 20px;
+}
+.container_questions_and_fears .form-questions input.nickname {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container_questions_and_fears .form-questions .error-message {
+  color: red;
+}
+.container_questions_and_fears .form-questions .form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.container_questions_and_fears .form-questions textarea.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container_questions_and_fears .form-questions button[type=button] {
+  background-color: #f0ad4e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container_questions_and_fears .form-questions button[type=button] .btn__txt {
+  font-weight: bold;
+}
+.container_questions_and_fears .form-questions button[type=button]:hover {
+  background-color: #ec971f;
+}
+
+.block_heading {
+  margin: 0;
+  color: #02315d;
+}
+
+.container_resume {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #02315d;
+  border-radius: 25px;
+  background-color: rgba(92, 142, 188, 0.8039215686);
+}
+.container_resume .resume_form {
+  display: flex;
+  flex-direction: column;
+}
+.container_resume .resume_form fieldset {
+  border: none;
+}
+.container_resume .resume_form .resume__features {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container_resume .resume_form .resume__description {
+  display: flex;
+  flex-direction: column;
+}
+.container_resume .resume_form .resume__submit {
+  margin: 10px 0;
+  padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+}
+
+.main_section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #02315d;
+  border-radius: 25px;
+  background-color: rgba(92, 142, 188, 0.8039215686);
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}/*# sourceMappingURL=vars.css.map */

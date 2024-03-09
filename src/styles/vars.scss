@@ -6,3 +6,122 @@ $-blue-color: #00457e;
 $light-blue-color: #5c8ebccd;
 $pink-color: #b9848c;
 $purple-color: #806492;
+
+.container_questions_and_fears {
+	// Стили для контейнера с вопросами и страхами
+	h1 {
+		// Стили для заголовка
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.list_questions {
+		// Стили для списка вопросов
+		// Дополнительные стили могут быть добавлены по необходимости
+	}
+
+	.form-questions {
+		// Стили для формы вопросов
+		margin-top: 20px;
+
+		input.nickname {
+			// Стили для поля ввода имени
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		.error-message {
+			// Стили для сообщения об ошибке
+			color: red;
+		}
+
+		.form-label {
+			// Стили для метки формы
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+
+		textarea.textarea {
+			// Стили для текстового поля
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		button[type="button"] {
+			// Стили для кнопки отправки вопроса
+			background-color: #f0ad4e;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+
+			.btn__txt {
+				// Стили для текста кнопки
+				font-weight: bold;
+			}
+		}
+
+		button[type="button"]:hover {
+			// Стили для кнопки при наведении
+			background-color: #ec971f;
+		}
+	}
+}
+
+.block_heading {
+	margin: 0;
+	color: $dark-blue-color;
+}
+
+.container_resume {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid $dark-blue-color;
+	border-radius: 25px;
+	background-color: $light-blue-color;
+	.resume_form {
+		display: flex;
+		flex-direction: column;
+
+		& fieldset {
+			border: none;
+		}
+
+		.resume__features {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.resume__description {
+			display: flex;
+			flex-direction: column;
+		}
+		.resume__submit {
+			margin: 10px 0;
+			padding: 10px;
+			width: fit-content;
+			align-self: center;
+		}
+	}
+}
+
+.main_section {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid $dark-blue-color;
+	border-radius: 25px;
+	background-color: $light-blue-color;
+	margin-bottom: 20px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
