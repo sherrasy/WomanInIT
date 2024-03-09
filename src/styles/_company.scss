@@ -6,9 +6,44 @@
 
   .company__section {
     display: flex;
-    &a {
+    .main__item {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 10px;
+      align-items: center;
+      flex: 20%;
+
+      padding: 0 30px;
+
+      @media screen and (max-width: 768px) {
+        border: solid #eff4f2;
+        box-shadow: 0px 15px 10px 0px #dfdede;
+        flex: 25%;
+      }
+
+      .title {
+        font-size: large;
+        font-weight: 700;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .text {
+        text-align: center;
+        line-height: 24px;
+        flex: 1 1 auto;
+      }
+    }
+    .work__button {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      padding: 20px;
+      font-size: large;
+      font-weight: 700;
       text-decoration: none;
-      color: #0000;
+      color: black;
     }
     .main__column {
       display: flex;
@@ -17,6 +52,7 @@
   }
 
   .img_logo {
-    width: 100px;
+    width: 200px;
+    padding: 10px;
   }
 }

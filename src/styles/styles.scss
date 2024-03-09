@@ -1,0 +1,210 @@
+@import './company';
+@import './webinars';
+@import './vars';
+
+.questions_and_fears {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+
+  .container_questions_and_fears {
+    display: grid;
+    justify-items: center;
+    justify-content: space-around;
+
+    .h1_questions {
+      font-size: 24px;
+      margin-bottom: 20px;
+      margin: 80%;
+      width: 100%;
+    }
+
+    .list_questions {
+      max-height: 25vh;
+      overflow-y: auto;
+      height: auto;
+      width: 26vw;
+      text-align: center;
+
+      /* Стилизация скроллбара */
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #f4f4f4;
+        border-radius: 4px;
+      }
+    }
+
+    .form-questions {
+      width: 100%;
+      margin-top: 20px;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      align-content: space-evenly;
+
+      input.nickname {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .error-message {
+        color: red;
+      }
+
+      .container_questions_and_fears .list_questions {
+        max-height: 300px; /* Пример фиксированной высоты контейнера */
+        overflow-y: auto; /* Добавляем вертикальную прокрутку */
+      }
+
+      .form-label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .question_card__content {
+        background-color: #c0637585;
+      }
+
+      textarea.textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button[type='button'] {
+        background-color: #4e2e79;
+        color: rgb(255, 241, 247);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Анимация изменения цвета фона */
+
+        .btn__txt {
+          font-weight: bold;
+        }
+      }
+
+      button[type='button']:hover {
+        background-color: #7e4ccf; /* Изменение цвета фона при наведении */
+      }
+    }
+  }
+}
+
+.question_card {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.question_card:nth-child(odd) {
+  border-radius: 30px;
+  background-color: #4d2f6678;
+}
+
+.question_card:nth-child(even) {
+  border-radius: 30px;
+  background-color: #d2848485;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+$blue: #0000ff;
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 50px;
+}
+
+blockquote {
+  background: white;
+  padding: 20px 30px 20px 30px;
+  margin: 50px auto;
+  width: 50%;
+  max-width: 500px;
+}
+
+.stacked {
+  border: solid 2px;
+  padding: 20px 30px 20px 30px;
+  box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 $blue, 15px 11px 0 0 $blue,
+    11px 15px 0 0 $blue;
+}
+
+.shadow {
+  border: solid 2px;
+  box-shadow: 15px 15px 0 0 $blue;
+}
+
+.rule {
+  position: relative;
+  left: 7px;
+  background: lighten($blue, 40%);
+  box-shadow: -2px 0 0 $blue, -4px 0 0 lighten($blue, 40%), -7px 0 0 $blue;
+}
+
+.block_heading {
+  margin: 0;
+  color: $dark-blue-color;
+}
+
+.container_resume {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $dark-blue-color;
+  border-radius: 25px;
+  background-color: $light-blue-color;
+  .resume_form {
+    display: flex;
+    flex-direction: column;
+
+    & fieldset {
+      border: none;
+    }
+
+    .resume__features {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .resume__description {
+      display: flex;
+      flex-direction: column;
+    }
+    .resume__submit {
+      margin: 10px 0;
+      padding: 10px;
+      width: fit-content;
+      align-self: center;
+    }
+  }
+}
+
+.main_section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $dark-blue-color;
+  border-radius: 25px;
+  background-color: $light-blue-color;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

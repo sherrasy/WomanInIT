@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/src/styles/vars.css" />
+		<link rel="stylesheet" href="/src/styles/styles.css" />
 	</head>
 	<body>
 		<main>
@@ -83,26 +83,42 @@
             </div>        
         </section>
       
-			<!--Вопросы и страхи блок Арины начало-->
-			<div>
-				<p></p>
-				<div class="container_questions_and_fears">
-					<h1>Вопросы и страхи</h1>
-					<div class="list_questions"></div>
-					<form class="form-questions">
-						<input type="text" class="nickname" placeholder="Ваше имя" />
-						<span class="error-message"></span>
-						<label class="form-label">Задайте свой вопрос</label>
-						<textarea class="textarea"></textarea>
-						<span class="error-message"></span>
-						<!-- <input type="file" placeholder="Фото" /> -->
-						<button type="button">
-							<span class="btn__txt">Отправить вопрос</span>
-						</button>
-					</form>
-				</div>
-			</div>
-			<!-- блок Арина конец-->
+ <!--Вопросы и страхи блок Арины начало-->
+ <div class="questions_and_fears">
+  <div class="h1_questions">
+    <h1 >Вопросы и страхи</h1></div>
+<div>
+
+  <div class="wrapper">
+    <blockquote class="stacked">
+      <p>Страшно сдаться во время поиска работы</p>
+    </blockquote>
+    <blockquote class="shadow">
+      <p>Как правильно проходить собеседование?</p>
+    </blockquote>
+    <blockquote class="rule">
+      <p>Где искать работу?</p>
+    </blockquote>
+  </div>
+  <p></p>
+  <div class="container_questions_and_fears">
+  
+    <div class="list_questions"></div>
+    <form class="form-questions">
+      <input type="text" class="nickname" placeholder="Ваше имя" />
+      <span class="error-message"></span>
+      <label class="form-label">Задайте свой вопрос</label>
+      <textarea class="textarea"></textarea>
+      <span class="error-message"></span>
+      <!-- <input type="file" placeholder="Фото" /> -->
+      <button type="button">
+        <span class="btn__txt">Отправить вопрос</span>
+      </button>
+    </form>
+  </div>
+</div>
+</div>
+<!-- блок Арина конец-->
 			<!--Компании-->
       <section class="main_section container_company">
       <h1>Мы подобрали для Вас подходящие компании:</h1>
@@ -163,7 +179,278 @@
           </section>
 
 			<!--Вебинары-->
+      <div class="section6">
+        <h2 class="section6__header header">ВЕБИНАРЫ</h2>
 
+        <!-- Меню-сортер для видео -->
+        <div class="section6__menu">
+          <a class="section6-menu__item1">ВСЕ</a>
+          <a class="section6-menu__item2">РЕЗЮМЕ</a>
+          <a class="section6-menu__item3">ПСИХОЛОГИЯ</a>
+          <a class="section6-menu__item4">СОБЕЕСЕДОВАНИЕ</a>
+          <a class="section6-menu__item5">СОФТ СКИЛЛЫ</a>
+        </div>
+
+        <!-- Основной блок с видео -->
+        <div class="section6__content">
+          <!-- 1st video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
+
+          <!-- 2nd video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
+
+          <!-- 3rd video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
+
+          <!-- 4th video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
+
+          <!-- 5th video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
+
+          <!-- 6th video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
+        </div>
+
+</div>
+
+      <!-- Консультации с HR -->
+      <div class="section7">
+        <div class="section7__header">
+          <h2 class="section7__title header">КОНСУЛЬТАЦИИ С HR</h2>
+          <p class="section7__text">
+            В данном разделе вы можете познакомиться с нашей HR-командой
+            консультантов, которые помогут Вам разобратся на всех этапах
+            написания резюме и сопроводительных писем. Мы понимаем, как важна и
+            необходима бывает помощь на этом этапе трудоустройства, поэтому
+            будем рады, если Вы решите довериться одному из наших специалистов.
+          </p>
+        </div>
+        <div class="section7__content">
+          <div class="section7-content__item">
+            <div class="section7-content__block1">
+              <img
+                class="section7-content__block1-img"
+                src="./src/assets/hr1.jpg"
+                alt="Ольга Нужная"
+              />
+            </div>
+            <div class="section7-content__block2">
+              <h3 class="section7-content__block2-title">Ольга Нужная</h3>
+              <p class="section7-content__block2-text1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="section7-content__item">
+            <div class="section7-content__block1">
+              <img
+                class="section7-content__block1-img"
+                src="./src/assets/hr2.jpg"
+                alt="Ангелина Берегова"
+              />
+            </div>
+            <div class="section7-content__block2">
+              <h3 class="section7-content__block2-title">Ольга Нужная</h3>
+              <p class="section7-content__block2-text1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="section7-content__item">
+            <div class="section7-content__block1">
+              <img
+                class="section7-content__block1-img"
+                src="./src/assets/hr3.jpg"
+                alt="Инга Валерьева"
+              />
+            </div>
+            <div class="section7-content__block2">
+              <h3 class="section7-content__block2-title">Ольга Нужная</h3>
+              <p class="section7-content__block2-text1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+</div>
+      </div>
 		</main>
 
 		<script src="js/index.js" type="module"></script>
