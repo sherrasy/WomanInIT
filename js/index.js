@@ -5,7 +5,8 @@ const addNotesButton = notesForm.querySelector('button[type=submit]');
 const deleteNotesButton = document.querySelector('#delete-notes');
 const userName = document.querySelector('#username');
 const notesList = document.querySelector('.notes_block__list');
-
+const featuresList = resumeForm.querySelectorAll('[name=features]');
+const descriptionField = resumeForm.querySelector('[name=description]');
 // Знакомство с пользователем
 const getName = () => {
   let name = prompt('Как к вам обращаться?');
@@ -20,10 +21,8 @@ const setResumeFormSubmit = () => {
   const resumeData = new FormData(resumeForm);
   const resumeInfo = {
     features: resumeData.getAll('features'),
-    avatar: resumeData.get('avatar'),
     description: resumeData.get('description'),
   };
-  console.log(resumeInfo);
   localStorage.setItem('resumeInfo', JSON.stringify(resumeInfo));
 };
 
@@ -151,8 +150,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     getName();
   }
 
-  const notesData = localStorage.getItem('notes');
+  const notesData = JSON.parse(localStorage.getItem('notes'));
   if (notesData) {
-    JSON.parse(notesData).forEach((item) => createNote(item.text));
+    notesData.forEach((item) => createNote(item.text));
+  }
+
+  const resumeInfo = JSON.parse(localStorage.getItem('resumeInfo'));
+  const { features, description } = resumeInfo;
+
+  if (features) {
+    featuresList.forEach((item) => {
+      const isChecked = features.some((feature) => feature === item.value);
+      item.checked = isChecked;
+    });
+  }
+
+  if (description) {
+    descriptionField.innerHTML = description;
   }
 });
