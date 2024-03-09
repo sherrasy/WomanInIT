@@ -3,7 +3,7 @@ const textarea = document.querySelector(".form-questions .textarea"); // Пол�
 const button = document.querySelector(".form-questions button"); // Получаем кнопку добавления
 const reviewsList = document.querySelector(
 	".container_questions_and_fears .list_questions"
-); // Получаем элемент списка отзывов (div)
+); // Получаем элемент списка вопросов (div)
 
 let Questions = []; // Создаем пустой массив для хранения вопросов
 
@@ -22,7 +22,7 @@ function addQuestion() {
 	const inputWhitespace = input.value.trim();
 	let isValid = true;
 	const nickname = input.value.replace(/</g, "‹").replace(/>/g, "›"); // Получаем значение из поля ввода ника и сохраняем его в переменной nickname
-	const questionText = textarea.value; // Получаем значение из поля ввода вопроса и сохраняем его в переменной questionText
+	const questionText = textarea.value.trim(); // Получаем значение из поля ввода вопроса и сохраняем его в переменной questionText
 	let questionObj = {}; // Создаем пустой объект для хранения ника и текста вопроса
 	if (!input.checkValidity() || inputWhitespace === "" || questionText === "") {
 		// Если текущий элемент ввода не проходит валидацию
@@ -75,9 +75,12 @@ function updateQuestionsList() {
 		newArticle.append(newDiv); // Добавляем div в новый article
 		reviewsList.append(newArticle); // Добавляем новый article в список вопросов
 	}
+
+	// Прокручиваем контейнер вниз, чтобы отобразить последние добавленные вопросы
+	reviewsList.scrollTop = reviewsList.scrollHeight;
 }
 
-// Обработччик клика на кнопку добавления вопроса
+// Обработчик клика на кнопку добавления вопроса
 button.addEventListener("click", addQuestion);
 
 // Инициализация списка вопросов при загрузке страницы

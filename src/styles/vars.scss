@@ -4,15 +4,28 @@ $light-blue-color: #2f71ae;
 $pink-color: #b9848c;
 $purple-color: #806492;
 
+/* Вопросы и страхи начало */
+.questions_and_fears {
+	display: grid;
+	justify-items: center;
+	justify-content: center;
+}
 .container_questions_and_fears {
+	display: grid;
+	justify-items: center;
+	justify-content: space-around;
 	// Стили для контейнера с вопросами и страхами
 	h1 {
 		// Стили для заголовка
 		font-size: 24px;
 		margin-bottom: 20px;
 	}
-
 	.list_questions {
+		max-height: 25vh;
+		overflow-y: auto;
+		height: auto;
+		width: 40vw;
+		text-align: center;
 		// Стили для списка вопросов
 		// Дополнительные стили могут быть добавлены по необходимости
 	}
@@ -20,6 +33,11 @@ $purple-color: #806492;
 	.form-questions {
 		// Стили для формы вопросов
 		margin-top: 20px;
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		align-content: space-evenly;
+		justify-content: center;
 
 		input.nickname {
 			// Стили для поля ввода имени
@@ -34,14 +52,19 @@ $purple-color: #806492;
 			// Стили для сообщения об ошибке
 			color: red;
 		}
-
+		.container_questions_and_fears .list_questions {
+			max-height: 300px; /* Пример фиксированной высоты контейнера */
+			overflow-y: auto; /* Добавляем вертикальную прокрутку */
+		}
 		.form-label {
 			// Стили для метки формы
 			display: block;
 			margin-bottom: 5px;
 			font-weight: bold;
 		}
-
+		.question_card__content {
+			background-color: #c0637585;
+		}
 		textarea.textarea {
 			// Стили для текстового поля
 			width: 100%;
@@ -72,3 +95,58 @@ $purple-color: #806492;
 		}
 	}
 }
+
+.question_card {
+	background-color: #f0f0f0; // Цвет фона по умолчанию
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.question_card:nth-child(odd) {
+	border-radius: 30px;
+	background-color: #4d2f6678; // Цвет фона для нечетных вопросов
+}
+
+.question_card:nth-child(even) {
+	border-radius: 30px;
+	background-color: #d2848485; // Цвет фона для четных вопросов
+}
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+$blue: #0000ff;
+
+.wrapper {
+	margin: 0 auto;
+	width: 90%;
+	padding-bottom: 50px;
+}
+
+blockquote {
+	background: white;
+	padding: 20px 30px 20px 30px;
+	margin: 50px auto;
+	width: 50%;
+	max-width: 500px;
+}
+
+.stacked {
+	border: solid 2px;
+	padding: 20px 30px 20px 30px;
+	box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 $blue, 15px 11px 0 0 $blue,
+		11px 15px 0 0 $blue;
+}
+
+.shadow {
+	border: solid 2px;
+	box-shadow: 15px 15px 0 0 $blue;
+}
+
+.rule {
+	position: relative;
+	left: 7px;
+	background: lighten($blue, 40%);
+	box-shadow: -2px 0 0 $blue, -4px 0 0 lighten($blue, 40%), -7px 0 0 $blue;
+}
+
+/* Вопросы и страхи конец */
