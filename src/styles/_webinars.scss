@@ -1,4 +1,4 @@
-@import "vars";
+@import 'vars';
 
 * {
   font-family: $font-main;
@@ -7,7 +7,7 @@
   .header {
     font-size: 38px;
     font-weight: 600;
-    color: $-blue-color;
+    color: $blue-color;
     text-align: center;
     margin-bottom: 40px;
   }
@@ -19,7 +19,7 @@
   .section1__header {
     font-size: 50px;
     font-weight: 700;
-    color: $-blue-color;
+    color: $blue-color;
   }
 
   .section1__text1,

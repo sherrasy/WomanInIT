@@ -2,6 +2,16 @@
 @import './webinars';
 @import './vars';
 
+.header {
+  background-color: $pink-color;
+  padding: 20px;
+  color: $dark-blue-color;
+  font-size: 14px;
+  h1 {
+    margin: 0;
+  }
+}
+
 .questions_and_fears {
   display: grid;
   justify-items: center;

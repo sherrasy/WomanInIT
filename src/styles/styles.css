@@ -168,7 +168,7 @@
 * .header {
   font-size: 38px;
   font-weight: 600;
-  color: #00457e;
+  color: #458cc6;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -178,13 +178,13 @@
 * .section1__header {
   font-size: 50px;
   font-weight: 700;
-  color: #00457e;
+  color: #458cc6;
 }
 * .section1__text1,
 * .section1__text2 {
   font-size: 24px;
   font-weight: 400;
-  color: #2f71ae;
+  color: #4886bf;
 }
 
 /* ВЕБИНАРЫ */
@@ -213,7 +213,7 @@
   grid-template: repeat(3, auto)/1fr;
   grid-gap: 20px;
   justify-content: center;
-  background-color: #2f71ae;
+  background-color: #4886bf;
   color: #fff;
   border-radius: 12px;
 }
@@ -370,6 +370,16 @@
   font-style: italic;
 }
 
+.header {
+  background-color: #b9848c;
+  padding: 20px;
+  color: #02315d;
+  font-size: 14px;
+}
+.header h1 {
+  margin: 0;
+}
+
 .questions_and_fears {
   display: grid;
   justify-items: center;
@@ -518,7 +528,7 @@ blockquote {
   align-items: center;
   border: 1px solid #02315d;
   border-radius: 25px;
-  background-color: #2f71ae;
+  background-color: #4886bf;
 }
 .container_resume .resume_form {
   display: flex;
@@ -550,7 +560,7 @@ blockquote {
   align-items: center;
   border: 1px solid #02315d;
   border-radius: 25px;
-  background-color: #2f71ae;
+  background-color: #4886bf;
   margin-bottom: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }/*# sourceMappingURL=styles.css.map */
