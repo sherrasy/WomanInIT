@@ -154,8 +154,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		getName();
 	}
 
-	const notesData = localStorage.getItem("notes");
+	const notesData = JSON.parse(localStorage.getItem("notes"));
 	if (notesData) {
-		JSON.parse(notesData).forEach((item) => createNote(item.text));
+		notesData.forEach((item) => createNote(item.text));
+	}
+
+	const resumeInfo = JSON.parse(localStorage.getItem("resumeInfo"));
+	const { features, description } = resumeInfo;
+
+	if (features) {
+		featuresList.forEach((item) => {
+			const isChecked = features.some((feature) => feature === item.value);
+			item.checked = isChecked;
+		});
+	}
+
+	if (description) {
+		descriptionField.innerHTML = description;
 	}
 });
