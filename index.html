@@ -13,7 +13,7 @@
 			<p>Сайт для помощи в подготовке к поиску работы женщинам в IT</p>
 			<p>У тебя обязательно все получится!</p>
 			<!--Резюме-->
-      <section>
+      <section class="container_resume">
         <h2 class="block_heading">Ваше резюме</h2>
         <p id="username"></p>
         <form class="resume_form" method="post">
@@ -27,17 +27,6 @@
                   height="44"
                 />
               </div>
-              <!-- <div class="resume-photo__field">
-                <input
-                  type="file"
-                  accept="image/png, image/jpeg"
-                  id="avatar"
-                  name="avatar"
-                  class="resume-photo__input"
-                />
-                <label class="resume-photo__drop-zone" for="avatar"
-                  >Загрузить фото</label
-                > -->
               </div>
               <p class="resume-photo_info">
                 Заполните ваши навыки, чтобы мы могли подобрать вам подходящие
@@ -46,8 +35,10 @@
             </div>
           </fieldset>
           <fieldset id="resume-features" class="resume__features">
-            <input type="checkbox" name="features" value="html" id="feature-html" class="resume__checkbox">
+            <p><input type="checkbox" name="features" value="html" id="feature-html" class="resume__checkbox">
             <label class="resume__feature" for="feature-html">HTML</label>
+          </p>
+            
             <input type="checkbox" name="features" value="css" id="feature-css" class="resume__checkbox">
             <label class="resume__feature" for="feature-css">CSS</label>
             <input type="checkbox" name="features" value="js" id="feature-js" class="resume__checkbox">
