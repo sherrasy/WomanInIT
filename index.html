@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style/style.css" />
-  </head>
-  <body>
-    <main>
-      <h1>Woman job helper</h1>
-      <p>Сайт для помощи в подготовке к поиску работы женщинам в IT</p>
-      <p>У тебя обязательно все получится!</p>
-      <!--Резюме-->
+	<head>
+		<meta charset="utf-8" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/src/styles/vars.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Woman job helper</h1>
+			<p>Сайт для помощи в подготовке к поиску работы женщинам в IT</p>
+			<p>У тебя обязательно все получится!</p>
+			<!--Резюме-->
 
-        <!--Задачи-->
+			<!--Задачи-->
 
-        <!--Вопросы и страхи-->
+			<!--Вопросы и страхи блок Арины начало-->
+			<div>
+				<p></p>
+				<div class="container_questions_and_fears">
+					<h1>Вопросы и страхи</h1>
+					<div class="list_questions"></div>
+					<form class="form-questions">
+						<input type="text" class="nickname" placeholder="Ваше имя" />
+						<span class="error-message"></span>
+						<label class="form-label">Задайте свой вопрос</label>
+						<textarea class="textarea"></textarea>
+						<span class="error-message"></span>
+						<!-- <input type="file" placeholder="Фото" /> -->
+						<button type="button">
+							<span class="btn__txt">Отправить вопрос</span>
+						</button>
+					</form>
+				</div>
+			</div>
+			<!-- блок Арина конец-->
+			<!--Компании-->
 
-        <!--Компании--> 
+			<!--Вебинары-->
+		</main>
 
-        <!--Вебинары-->   
-    
-    </main>
+		<footer></footer>
 
-
-
-    <footer></footer>
-
-    <script src="js/index.js" type="module"></script>
-  </body>
+		<script src="js/index.js" type="module"></script>
+	</body>
 </html>
