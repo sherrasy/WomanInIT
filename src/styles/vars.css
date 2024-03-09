@@ -75,6 +75,43 @@
   background-color: #ec971f;
 }
 
+.block_heading {
+  margin: 0;
+  color: #02315d;
+}
+
+.container_resume {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #02315d;
+  border-radius: 25px;
+  background-color: rgba(92, 142, 188, 0.8039215686);
+}
+.container_resume .resume_form {
+  display: flex;
+  flex-direction: column;
+}
+.container_resume .resume_form fieldset {
+  border: none;
+}
+.container_resume .resume_form .resume__features {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container_resume .resume_form .resume__description {
+  display: flex;
+  flex-direction: column;
+}
+.container_resume .resume_form .resume__submit {
+  margin: 10px 0;
+  padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+}
+
 .question_card {
   background-color: #f0f0f0;
   padding: 10px;

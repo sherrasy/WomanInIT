@@ -1,9 +1,68 @@
+const resumeForm = document.querySelector(".resume_form");
+const resumeButton = resumeForm.querySelector("button[type=submit]");
+const notesForm = document.querySelector(".notes_form");
+const addNotesButton = notesForm.querySelector("button[type=submit]");
+const deleteNotesButton = document.querySelector("#delete-notes");
+const userName = document.querySelector("#username");
+const notesList = document.querySelector(".notes_block__list");
+
+// Знакомство с пользователем
+const getName = () => {
+	let name = prompt("Как к вам обращаться?");
+	if (name == null || name == "") {
+		name = "Неопознанная леди";
+	}
+	localStorage.setItem("username", name);
+};
+
+// Добавление информации о себе в резюме
+const setResumeFormSubmit = () => {
+	const resumeData = new FormData(resumeForm);
+	const resumeInfo = {
+		features: resumeData.getAll("features"),
+		avatar: resumeData.get("avatar"),
+		description: resumeData.get("description"),
+	};
+	console.log(resumeInfo);
+	localStorage.setItem("resumeInfo", JSON.stringify(resumeInfo));
+};
+
+resumeButton.addEventListener("click", (evt) => {
+	evt.preventDefault();
+	setResumeFormSubmit();
+});
+
+// Добавление задачи в список
+const createNote = (note) => {
+	const newItem = document.createElement("li");
+	const text = document.createElement("span");
+	text.append(note);
+	notesList.appendChild(newItem).append(text);
+};
+
+// Добавление новых задач
+const setNotesFormSubmit = () => {
+	const notesData = new FormData(notesForm);
+	const note = notesData.get("note");
+	createNote(note);
+	const notes = [];
+	notesList.querySelectorAll("li").forEach((item, i) => {
+		notes.push({ id: i, text: item.innerText });
+	});
+	localStorage.setItem("notes", JSON.stringify(notes));
+};
+
+addNotesButton.addEventListener("click", (evt) => {
+	evt.preventDefault();
+	setNotesFormSubmit();
+});
+
 const input = document.querySelector(".form-questions .nickname"); // Получаем элемент ввода ника
 const textarea = document.querySelector(".form-questions .textarea"); // Получаем элемент ввода текста вопроса
 const button = document.querySelector(".form-questions button"); // Получаем кнопку добавления
 const reviewsList = document.querySelector(
 	".container_questions_and_fears .list_questions"
-); // Получаем элемент списка вопросов (div)
+); // Получаем элемент списка отзывов (div)
 
 let Questions = []; // Создаем пустой массив для хранения вопросов
 
@@ -85,3 +144,18 @@ button.addEventListener("click", addQuestion);
 
 // Инициализация списка вопросов при загрузке страницы
 updateQuestionsList();
+
+// Подгрузка данных при загрузке
+document.addEventListener("DOMContentLoaded", (event) => {
+	const name = localStorage.getItem("username");
+	if (name) {
+		userName.textContent = name;
+	} else {
+		getName();
+	}
+
+	const notesData = localStorage.getItem("notes");
+	if (notesData) {
+		JSON.parse(notesData).forEach((item) => createNote(item.text));
+	}
+});

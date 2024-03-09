@@ -1,6 +1,6 @@
 $dark-blue-color: #02315d;
 $-blue-color: #00457e;
-$light-blue-color: #2f71ae;
+$light-blue-color: #5c8ebccd;
 $pink-color: #b9848c;
 $purple-color: #806492;
 
@@ -92,6 +92,44 @@ $purple-color: #806492;
 		button[type="button"]:hover {
 			// Стили для кнопки при наведении
 			background-color: #ec971f;
+		}
+	}
+}
+
+.block_heading {
+	margin: 0;
+	color: $dark-blue-color;
+}
+
+.container_resume {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid $dark-blue-color;
+	border-radius: 25px;
+	background-color: $light-blue-color;
+	.resume_form {
+		display: flex;
+		flex-direction: column;
+
+		& fieldset {
+			border: none;
+		}
+
+		.resume__features {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.resume__description {
+			display: flex;
+			flex-direction: column;
+		}
+		.resume__submit {
+			margin: 10px 0;
+			padding: 10px;
+			width: fit-content;
+			align-self: center;
 		}
 	}
 }

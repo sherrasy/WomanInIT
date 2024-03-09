@@ -13,9 +13,78 @@
 			<p>Сайт для помощи в подготовке к поиску работы женщинам в IT</p>
 			<p>У тебя обязательно все получится!</p>
 			<!--Резюме-->
-
+      <section class="container_resume">
+        <h2 class="block_heading">Ваше резюме</h2>
+        <p id="username"></p>
+        <form class="resume_form" method="post">
+          <fieldset class="resume-photo">
+            <div class="resume-photo__upload">
+              <div class="resume-photo__preview">
+                <img
+                  src="src/assets/avatar.svg"
+                  alt="Аватар пользователя"
+                  width="40"
+                  height="44"
+                />
+              </div>
+              </div>
+              <p class="resume-photo_info">
+                Заполните ваши навыки, чтобы мы могли подобрать вам подходящие
+                компании.
+              </p>
+            </div>
+          </fieldset>
+          <fieldset id="resume-features" class="resume__features">
+            <p><input type="checkbox" name="features" value="html" id="feature-html" class="resume__checkbox">
+            <label class="resume__feature" for="feature-html">HTML</label>
+          </p>
+            
+            <input type="checkbox" name="features" value="css" id="feature-css" class="resume__checkbox">
+            <label class="resume__feature" for="feature-css">CSS</label>
+            <input type="checkbox" name="features" value="js" id="feature-js" class="resume__checkbox">
+            <label class="resume__feature" for="feature-js">Javascript</label>
+            <input type="checkbox" name="features" value="ts" id="feature-ts" class="resume__checkbox">
+            <label class="resume__feature" for="feature-ts">Typescript</label>
+            <input type="checkbox" name="features" value="react" id="feature-react" class="resume__checkbox">
+            <label class="resume__feature" for="feature-react">React</label>
+            <input type="checkbox" name="features" value="vue" id="feature-vue" class="resume__checkbox">
+            <label class="resume__feature" for="feature-vue">Vue</label>
+            <input type="checkbox" name="features" value="angular" id="feature-angular" class="resume__checkbox">
+            <label class="resume__feature" for="feature-angular">Angular</label>
+            <input type="checkbox" name="features" value="java" id="feature-java" class="resume__checkbox">
+            <label class="resume__feature" for="feature-java">Java</label>
+            <input type="checkbox" name="features" value="nodejs" id="feature-nodejs" class="resume__checkbox">
+            <label class="resume__feature" for="feature-nodejs">Nodejs</label>
+            <input type="checkbox" name="features" value="sql" id="feature-sql" class="resume__checkbox">
+            <label class="resume__feature" for="feature-sql">SQL</label> 
+            <input type="checkbox" name="features" value="figma" id="feature-figma" class="resume__checkbox">
+            <label class="resume__feature" for="feature-figma">Figma</label>
+            <input type="checkbox" name="features" value="figma" id="feature-tilda" class="resume__checkbox">
+            <label class="resume__feature" for="feature-tilda">Tilda</label>
+           </fieldset>
+           <fieldset class="resume__description">
+            <label class="resume__label" for="description">О себе</label>
+            <textarea id="description" name="description" placeholder="Здесь расскажите о себе"></textarea>
+          </fieldset>
+          <button class="resume__submit" type="submit">Сохранить</button>
+        </form>
+      </section>
 			<!--Задачи-->
-
+        <section>
+            <h2 class="block_heading"> Ваши задачи</h2>
+            <p> Добавьте здесь ваши планы, чтобы не забыть </p>
+            <div class="notes">
+                     <form class="notes_form" method="post">
+                        <input class="notes_form__text" placeholder="Note text" name="note" required></input>
+                        <button class="notes_form__submit" type="submit">Сохранить</button>
+                    </form>
+                    <div class="notes_block">
+                        <ul class="notes_block__list">
+                        </ul>
+                    </div>
+            </div>        
+        </section>
+      
 			<!--Вопросы и страхи блок Арины начало-->
       <div class="questions_and_fears">
 			<div>
