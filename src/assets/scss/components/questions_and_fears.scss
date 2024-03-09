@@ -1,0 +1,57 @@
+.error {
+	border-color: red; // Цвет рамки поля ввода в случае ошибки
+}
+
+.error-message {
+	color: red; // Цвет текста сообщения об ошибке
+}
+
+.form-review {
+	max-width: 500px; // Максимальная ширина формы
+}
+
+.nickname,
+.textarea {
+	width: 100%; // Ширина полей ввода
+	margin-bottom: 10px; // Отступ между полями ввода
+}
+
+.btn--submit3 {
+	background-color: yellow; // Цвет фона кнопки
+	color: black; // Цвет текста кнопки
+	border: none; // Убираем границу кнопки
+	padding: 10px 20px; // Отступы внутри кнопки
+	cursor: pointer; // Изменяем курсор при наведении на кнопку
+
+	// Иконки внутри кнопки
+	i {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background-color: black;
+		margin-right: 5px;
+	}
+}
+
+.btn--submit3:hover {
+	background-color: #ffd700; // Изменяем цвет фона кнопки при наведении
+}
+
+.review_card {
+	border: 1px solid #ccc; // Граница карточки отзыва
+	margin-bottom: 10px; // Отступ между карточками отзывов
+	padding: 10px; // Внутренний отступ карточки отзыва
+}
+
+.review_card__content {
+	display: flex; // Устанавливаем flex для содержимого карточки отзыва
+	flex-direction: column; // Содержимое карточки будет в столбце
+}
+
+.review_nickname {
+	font-weight: bold; // Жирный шрифт для ника в отзыве
+}
+
+.review_text {
+	margin-top: 5px; // Отступ сверху для текста отзыва
+}

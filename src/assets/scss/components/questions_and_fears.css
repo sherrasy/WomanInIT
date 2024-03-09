@@ -1,0 +1,55 @@
+.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+}
+
+.form-review {
+  max-width: 500px;
+}
+
+.nickname,
+.textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn--submit3 {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.btn--submit3 i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  margin-right: 5px;
+}
+
+.btn--submit3:hover {
+  background-color: #ffd700;
+}
+
+.review_card {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.review_card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.review_nickname {
+  font-weight: bold;
+}
+
+.review_text {
+  margin-top: 5px;
+}/*# sourceMappingURL=questions_and_fears.css.map */
