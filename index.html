@@ -13,9 +13,88 @@
       <p>Сайт для помощи в подготовке к поиску работы женщинам в IT</p>
       <p>У тебя обязательно все получится!</p>
       <!--Резюме-->
-
+      <section>
+        <h2 class="block_heading">Ваше резюме</h2>
+        <form class="resume_form" method="post">
+          <fieldset class="resume-photo">
+            <legend class="resume-photo__title">Ваша фотография</legend>
+            <div class="resume-photo__upload">
+              <div class="resume-photo__preview">
+                <img
+                  src="src/assets/avatar.svg"
+                  alt="Аватар пользователя"
+                  width="40"
+                  height="44"
+                />
+              </div>
+              <div class="resume-photo__field">
+                <input
+                  type="file"
+                  accept="image/png, image/jpeg"
+                  id="avatar"
+                  name="avatar"
+                  class="resume-photo__input"
+                />
+                <label class="resume-photo__drop-zone" for="avatar"
+                  >Загрузить фото</label
+                >
+              </div>
+              <p class="resume-photo_info">
+                Заполните ваши навыки, чтобы мы могли подобрать вам подходящие
+                компании.
+              </p>
+            </div>
+          </fieldset>
+          <fieldset id="resume-features" class="resume__features">
+            <input type="checkbox" name="features" value="html" id="filter-html" class="resume__checkbox">
+            <label class="resume__feature" for="filter-html">HTML</label>
+            <input type="checkbox" name="features" value="css" id="filter-css" class="resume__checkbox">
+            <label class="resume__feature" for="filter-css">CSS</label>
+            <input type="checkbox" name="features" value="js" id="filter-js" class="resume__checkbox">
+            <label class="resume__feature" for="filter-js">Javascript</label>
+            <input type="checkbox" name="features" value="ts" id="filter-ts" class="resume__checkbox">
+            <label class="resume__feature" for="filter-ts">Typescript</label>
+            <input type="checkbox" name="features" value="react" id="filter-react" class="resume__checkbox">
+            <label class="resume__feature" for="filter-react">React</label>
+            <input type="checkbox" name="features" value="vue" id="filter-vue" class="resume__checkbox">
+            <label class="resume__feature" for="filter-vue">Vue</label>
+            <input type="checkbox" name="features" value="angular" id="filter-angular" class="resume__checkbox">
+            <label class="resume__feature" for="filter-angular">Angular</label>
+            <input type="checkbox" name="features" value="java" id="filter-java" class="resume__checkbox">
+            <label class="resume__feature" for="filter-java">Java</label>
+            <input type="checkbox" name="features" value="nodejs" id="filter-nodejs" class="resume__checkbox">
+            <label class="resume__feature" for="filter-nodejs">Nodejs</label>
+            <input type="checkbox" name="features" value="sql" id="filter-sql" class="resume__checkbox">
+            <label class="resume__feature" for="filter-sql">SQL</label> 
+            <input type="checkbox" name="features" value="figma" id="filter-figma" class="resume__checkbox">
+            <label class="resume__feature" for="filter-figma">Figma</label>
+            <input type="checkbox" name="features" value="figma" id="filter-tilda" class="resume__checkbox">
+            <label class="resume__feature" for="filter-tilda">Tilda</label>
+           </fieldset>
+           <fieldset class="resume__description">
+            <label class="resume__label" for="description">О себе</label>
+            <textarea id="description" name="description" placeholder="Здесь расскажите о себе"></textarea>
+          </fieldset>
+          <button class="resume__submit" type="submit">Сохранить</button>
+        </form>
+      </section>
         <!--Задачи-->
-
+        <section>
+            <h2 class="block_heading"> Ваши задачи</h2>
+            <p> Добавьте здесь ваши планы, чтобы не забыть </p>
+            <div class="notes">
+                     <form class="notes_form" method="post">
+                        <input class="notes_form__text" placeholder="Note text" required></input>
+                        <button class="notes_form__submit" type="submit">Сохранить</button>
+                    </div>
+                    <div class="notes_block">
+                        <ul class="notes_block__list">
+                        </ul>
+                    </div>
+                    <button class="notes__delete" id="delete-notes">Удалить все</button>
+            </div>        
+        </section>
+      
         <!--Вопросы и страхи-->
 
         <!--Компании--> 
