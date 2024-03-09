@@ -1,0 +1,43 @@
+.container_questions_and_fears h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.container_questions_and_fears .form-questions {
+  margin-top: 20px;
+}
+.container_questions_and_fears .form-questions input.nickname {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container_questions_and_fears .form-questions .error-message {
+  color: red;
+}
+.container_questions_and_fears .form-questions .form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.container_questions_and_fears .form-questions textarea.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container_questions_and_fears .form-questions button[type=button] {
+  background-color: #f0ad4e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container_questions_and_fears .form-questions button[type=button] .btn__txt {
+  font-weight: bold;
+}
+.container_questions_and_fears .form-questions button[type=button]:hover {
+  background-color: #ec971f;
+}/*# sourceMappingURL=vars.css.map */
