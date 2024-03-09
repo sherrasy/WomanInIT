@@ -15,9 +15,9 @@
       <!--Резюме-->
       <section>
         <h2 class="block_heading">Ваше резюме</h2>
+        <p id="username"></p>
         <form class="resume_form" method="post">
           <fieldset class="resume-photo">
-            <legend class="resume-photo__title">Ваша фотография</legend>
             <div class="resume-photo__upload">
               <div class="resume-photo__preview">
                 <img
@@ -27,7 +27,7 @@
                   height="44"
                 />
               </div>
-              <div class="resume-photo__field">
+              <!-- <div class="resume-photo__field">
                 <input
                   type="file"
                   accept="image/png, image/jpeg"
@@ -37,7 +37,7 @@
                 />
                 <label class="resume-photo__drop-zone" for="avatar"
                   >Загрузить фото</label
-                >
+                > -->
               </div>
               <p class="resume-photo_info">
                 Заполните ваши навыки, чтобы мы могли подобрать вам подходящие
@@ -84,14 +84,13 @@
             <p> Добавьте здесь ваши планы, чтобы не забыть </p>
             <div class="notes">
                      <form class="notes_form" method="post">
-                        <input class="notes_form__text" placeholder="Note text" required></input>
+                        <input class="notes_form__text" placeholder="Note text" name="note" required></input>
                         <button class="notes_form__submit" type="submit">Сохранить</button>
                     </form>
                     <div class="notes_block">
                         <ul class="notes_block__list">
                         </ul>
                     </div>
-                    <button class="notes__delete" id="delete-notes">Удалить все</button>
             </div>        
         </section>
       
