@@ -111,3 +111,15 @@ $purple-color: #806492;
     }
   }
 }
+
+.main_section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $dark-blue-color;
+  border-radius: 25px;
+  background-color: $light-blue-color;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
