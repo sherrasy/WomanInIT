@@ -1,171 +1,318 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8" />
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/src/styles/vars.css" />
-	</head>
-	<body>
-		<main>
-			<h1 class="main_header">Woman job helper</h1>
-			<p class="main_text">Сайт для помощи в подготовке к поиску работы женщинам в IT</p>
-			<p class="main_text">У тебя обязательно все получится!</p>
-			<!--Резюме-->
-      <section class="container_resume main_section">
-        <h2 class="block_heading">Ваше резюме</h2>
-        <p id="username"></p>
-        <form class="resume_form" method="post">
-          <fieldset class="resume-photo">
-            <div class="resume-photo__upload">
-              <div class="resume-photo__preview">
-                <img
-                  src="src/assets/avatar.svg"
-                  alt="Аватар пользователя"
-                  width="40"
-                  height="44"
-                />
-              </div>
-              </div>
-              <p class="resume-photo_info">
-                Заполните ваши навыки, чтобы мы могли подобрать вам подходящие
-                компании.
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/ index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="section1">
+        <h1 class="section1__header">Woman job helper</h1>
+        <p class="section1__text1">
+          Сайт для помощи в подготовке к поиску работы женщинам в IT
+        </p>
+        <p class="section1__text2">У тебя обязательно все получится!</p>
+      </div>
+      <!--Резюме-->
+
+      <!--Задачи-->
+
+      <!--Вопросы и страхи-->
+
+      <!--Компании-->
+
+      <!--Вебинары-->
+      <div class="section6">
+        <h2 class="section6__header header">ВЕБИНАРЫ</h2>
+
+        <!-- Меню-сортер для видео -->
+        <div class="section6__menu">
+          <a class="section6-menu__item1">ВСЕ</a>
+          <a class="section6-menu__item2">РЕЗЮМЕ</a>
+          <a class="section6-menu__item3">ПСИХОЛОГИЯ</a>
+          <a class="section6-menu__item4">СОБЕЕСЕДОВАНИЕ</a>
+          <a class="section6-menu__item5">СОФТ СКИЛЛЫ</a>
+        </div>
+
+        <!-- Основной блок с видео -->
+        <div class="section6__content">
+          <!-- 1st video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
               </p>
             </div>
-          </fieldset>
-          <fieldset id="resume-features" class="resume__features">
-            <input type="checkbox" name="features" value="html" id="feature-html" class="resume__checkbox">
-            <label class="resume__feature" for="feature-html">HTML</label>
-            <input type="checkbox" name="features" value="css" id="feature-css" class="resume__checkbox">
-            <label class="resume__feature" for="feature-css">CSS</label>
-            <input type="checkbox" name="features" value="js" id="feature-js" class="resume__checkbox">
-            <label class="resume__feature" for="feature-js">Javascript</label>
-            <input type="checkbox" name="features" value="ts" id="feature-ts" class="resume__checkbox">
-            <label class="resume__feature" for="feature-ts">Typescript</label>
-            <input type="checkbox" name="features" value="react" id="feature-react" class="resume__checkbox">
-            <label class="resume__feature" for="feature-react">React</label>
-            <input type="checkbox" name="features" value="vue" id="feature-vue" class="resume__checkbox">
-            <label class="resume__feature" for="feature-vue">Vue</label>
-            <input type="checkbox" name="features" value="angular" id="feature-angular" class="resume__checkbox">
-            <label class="resume__feature" for="feature-angular">Angular</label>
-            <input type="checkbox" name="features" value="java" id="feature-java" class="resume__checkbox">
-            <label class="resume__feature" for="feature-java">Java</label>
-            <input type="checkbox" name="features" value="nodejs" id="feature-nodejs" class="resume__checkbox">
-            <label class="resume__feature" for="feature-nodejs">Nodejs</label>
-            <input type="checkbox" name="features" value="sql" id="feature-sql" class="resume__checkbox">
-            <label class="resume__feature" for="feature-sql">SQL</label> 
-            <input type="checkbox" name="features" value="figma" id="feature-figma" class="resume__checkbox">
-            <label class="resume__feature" for="feature-figma">Figma</label>
-            <input type="checkbox" name="features" value="figma" id="feature-tilda" class="resume__checkbox">
-            <label class="resume__feature" for="feature-tilda">Tilda</label>
-           </fieldset>
-           <fieldset class="resume__description">
-            <label class="resume__label" for="description">О себе</label>
-            <textarea id="description" name="description" placeholder="Здесь расскажите о себе"></textarea>
-          </fieldset>
-          <button class="resume__submit" type="submit">Сохранить</button>
-        </form>
-      </section>
-			<!--Задачи-->
-        <section class="main_section">
-            <h2 class="block_heading"> Ваши задачи</h2>
-            <p> Добавьте здесь ваши планы, чтобы не забыть </p>
-            <div class="notes">
-                     <form class="notes_form" method="post">
-                        <input class="notes_form__text" placeholder="Note text" name="note" required></input>
-                        <button class="notes_form__submit" type="submit">Сохранить</button>
-                    </form>
-                    <div class="notes_block">
-                        <ul class="notes_block__list">
-                        </ul>
-                    </div>
-            </div>        
-        </section>
-      
-			<!--Вопросы и страхи блок Арины начало-->
-			<div>
-				<p></p>
-				<div class="container_questions_and_fears">
-					<h1>Вопросы и страхи</h1>
-					<div class="list_questions"></div>
-					<form class="form-questions">
-						<input type="text" class="nickname" placeholder="Ваше имя" />
-						<span class="error-message"></span>
-						<label class="form-label">Задайте свой вопрос</label>
-						<textarea class="textarea"></textarea>
-						<span class="error-message"></span>
-						<!-- <input type="file" placeholder="Фото" /> -->
-						<button type="button">
-							<span class="btn__txt">Отправить вопрос</span>
-						</button>
-					</form>
-				</div>
-			</div>
-			<!-- блок Арина конец-->
-			<!--Компании-->
-      <section class="main_section container_company">
-      <h1>Мы подобрали для Вас подходящие компании:</h1>
-      <div class="company__section">
-
-          <div class="main_company">
-              <div class="main__column">
-                  <div class="main__item">
-                      <div class="title">Альфа Банк</div>
-                      <div class="logo">
-                          <img class="img_logo" src="src/assets/alfa.png" alt="logoscratch">
-                      </div>
-                      <div class="text">
-
-                          Товарищи, укрепления и развития структуры в значительной степени обусловливает
-                          создание существенных финансовых и административных условий. Не следует, однако,
-                          забывать, что новая модель организационной деятельности влечет за собой процесс
-                          внедрения и модернизации системы обучения кадров, соответствующей насущным
-                          потребностям.
-                      </div>
-
-                      <a href="/alfa.html" class="work__button">Просмотр вакансий</a>
-                  </div>
-
-                  <div class="main__item">
-                      <div class="title"> Строительная фирма "Проспект"</div>
-                      <div class="logo">
-                          <img class="img_logo" src="src/assets/stroy.jpg" alt="logoscratch">
-                      </div>
-                      <div class="text">
-                          Товарищи, укрепления и развития структуры в значительной степени обусловливает
-                          создание существенных финансовых и административных условий. Не следует, однако,
-                          забывать, что новая модель организационной деятельности влечет за собой процесс
-                          внедрения и модернизации системы обучения кадров, соответствующей насущным
-                          потребностям.
-                      </div>
-
-                      <a href="/stroy.html" class="work__button">Просмотр вакансий</a>
-                  </div>
-
-                  <div class="main__item">
-                      <div class="title">Online-Shop</div>
-                      <div class="logo">
-                          <img class="img_logo" src="src/assets/shop.jpg" alt="logoscratch">
-                      </div>
-                      <div class="text">
-                          Товарищи, укрепления и развития структуры в значительной степени обусловливает
-                          создание существенных финансовых и административных условий. Не следует, однако,
-                          забывать, что новая модель организационной деятельности влечет за собой процесс
-                          внедрения и модернизации системы обучения кадров, соответствующей насущным
-                          потребностям.
-                      </div>
-
-                      <a href="/online_shop.html" class="work__button">Просмотр вакансий</a>
-                  </div>
-              </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
           </div>
-          </section>
 
-			<!--Вебинары-->
+          <!-- 2nd video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
 
-		</main>
+          <!-- 3rd video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
 
-		<script src="js/index.js" type="module"></script>
-	</body>
+          <!-- 4th video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
+
+          <!-- 5th video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
+
+          <!-- 6th video-card -->
+          <div class="section6-content__item">
+            <div class="item__block1">
+              <iframe
+                class="item-block1__video"
+                width="560px"
+                height="315px"
+                src="https://www.youtube.com/embed/N4azEVwZGpk?si=y5DOIYBptaL7TNOl"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item__block2">
+              <h2 class="item-block2__title">
+                Как пройти себеседование на 100%
+              </h2>
+              <p class="item-block2__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="item__block3">
+              <p class="item-block3__text">
+                <span>Автор:</span> Лена про Карьеру
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--
+        <div class="section6-content__button">
+          <button>Загрузить ещё больше видео</button>
+        </div>
+      --></div>
+
+      <!-- Консультации с HR -->
+      <div class="section7">
+        <div class="section7__header">
+          <h2 class="section7__title header">КОНСУЛЬТАЦИИ С HR</h2>
+          <p class="section7__text">
+            В данном разделе вы можете познакомиться с нашей HR-командой
+            консультантов, которые помогут Вам разобратся на всех этапах
+            написания резюме и сопроводительных писем. Мы понимаем, как важна и
+            необходима бывает помощь на этом этапе трудоустройства, поэтому
+            будем рады, если Вы решите довериться одному из наших специалистов.
+          </p>
+        </div>
+        <div class="section7__content">
+          <div class="section7-content__item">
+            <div class="section7-content__block1">
+              <img
+                class="section7-content__block1-img"
+                src="./src/assets/hr1.jpg"
+                alt="Ольга Нужная"
+              />
+            </div>
+            <div class="section7-content__block2">
+              <h3 class="section7-content__block2-title">Ольга Нужная</h3>
+              <p class="section7-content__block2-text1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="section7-content__item">
+            <div class="section7-content__block1">
+              <img
+                class="section7-content__block1-img"
+                src="./src/assets/hr2.jpg"
+                alt="Ангелина Берегова"
+              />
+            </div>
+            <div class="section7-content__block2">
+              <h3 class="section7-content__block2-title">Ольга Нужная</h3>
+              <p class="section7-content__block2-text1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="section7-content__item">
+            <div class="section7-content__block1">
+              <img
+                class="section7-content__block1-img"
+                src="./src/assets/hr3.jpg"
+                alt="Инга Валерьева"
+              />
+            </div>
+            <div class="section7-content__block2">
+              <h3 class="section7-content__block2-title">Ольга Нужная</h3>
+              <p class="section7-content__block2-text1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <!--
+          <div class="section7__buttons">
+            <button class="section7-buttons__item1">
+              <img src="./src/assets/arrow-left-circle.png" alt="<-" />
+            </button>
+            <button class="section7-buttons__item2">
+              <img src="./src/assets/arrow-left-circle.png" alt="->" />
+            </button>
+          </div>
+        --></div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/index.js" type="module"></script>
+  </body>
 </html>
