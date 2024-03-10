@@ -1,7 +1,7 @@
 # Woman in It: job helper
 Проект в рамках хакатона, направленный на создание сайта для помощи в поиске работы женщинам в IT. 
 
-Посмотреть можно тут: https://sherrasy.github.io/it_ninjas/
+Посмотреть можно тут: https://sherrasy.github.io/WomanInIT/
 
 ## Идея проекта и его составляющие
 
